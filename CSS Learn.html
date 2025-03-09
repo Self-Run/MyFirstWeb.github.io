@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS学习</title>
+    <style>
+        /* 元素选择器 */
+        h2{
+            color: blue;
+            font-size: 100px;
+        }
+        /* 类选择器 */
+        .highlight{
+            color: rgb(94, 62, 20);
+            background-color: aqua;
+        }
+        /* id选择器 */
+        #slect{
+            font-size: 33px;
+        }
+         /* 通用选择器(针对所有字体) */
+        *{
+            font-family: 'KaiTi';
+            font-weight: bolder;
+        }
+        /* 子元素选择器 */
+        .father > .son{
+            color: rgb(135, 50, 205);
+            font-size: 66px;
+        }
+        /* 后代选择器 */
+        .father p{
+            color: yellowgreen;
+            font-size: 33px;
+        }
+        /* 兄弟选择器_略(使用不多，需要时再查阅) */
+        /* 伪类选择器 */
+        #element:hover{
+            background-color: rgb(24, 214, 157);
+        }
+
+
+        /* 块级元素 */
+        .block{
+            background-color: #1a6ece;
+            width: 66px;
+            line-height: 66px;
+        }
+        /* 行内元素(宽度高度不可改) */
+        .inline{
+            background-color: #a32929;
+            width: 66px;
+        }
+        /* 行内块元素 */
+        .inline-block{
+            width: 500px;
+        }
+
+
+        /* 盒子模型 */
+        .border-demo {
+            background-color: yellow;
+            width: 300px;
+            height: 200px;
+            border-style: solid;
+            border-width:10px;
+            border-color:brown;
+            /*border-left:10px solid brown; */
+        }
+        /* 边框模型 */
+        .demo {
+        background-color:aqua;
+        display: inline-block;
+        border:5px solid yellowgreen;
+        padding:50px;
+        margin: 40px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <p>应用了内嵌式CSS样式的文本</p>
+    <hr>
+
+    <h1 style="color: aqua;; font-size: large;">应用内部样式</h1>
+    <hr>
+
+<!----------------------选择器--------------------------->
+
+    <h1>不同类型的CSS选择器</h1>
+    <hr>
+
+    <h2>元素选择器示例</h2>
+    <h2 class="highlight">类选择器示例</h2>
+    <hr>
+
+    <h4 id="slect">id选择器示例</h4>
+    <hr>
+
+    <div class="father">
+    <p class="son">子元素选择器示例</p>
+        <div>
+        <p class="grandson">后代选择器示例</p>
+        </div>
+    </div><!--注意div标签需要包括元素标签才能生效-->
+    <hr>
+
+    <h3 id="element">伪类选择器示例(鼠标放上去可以出现底色)</h3><!--悬停是通过head中“#element:hover”中的hover（悬停）实现的-->
+    <hr>
+
+<!----------------------属性--------------------------->
+
+    <h1 style="font: bolder 50px 'KaiTi';">font符合属性示例</h1>
+    <p style="line-height: 33px;">调整行距：line-height；调整行距：line-height；调整行距：line-height；调整行距：
+        line-height；调整行距：line-height；调整行距：line-height；调整行距：line-height；调整行距：line-height；调
+        整行距：line-height；</p>
+    <hr>
+
+    <div class="block">块级元素</div>
+    <span class="inline">行内元素</span><br>
+    <img src="myimage.jpg" alt="" class="inline-block"><!--这三种元素可以相互转换-->
+    <hr>
+
+<!----------------------盒子模型--------------------------->
+
+    <div class="demo">盒子模型示例</div>
+    <div class="border-demo">边框示例</div>
+    <hr>
+
+    <!-- <iframe width="100%" height="300" src="https://www.jyshare.com/iframe/9359" allowfullscreen="allowfullscreen" frameborder="0"></iframe> -->
+</body>
+</html>
