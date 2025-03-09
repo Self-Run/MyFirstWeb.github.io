@@ -1,5 +1,6 @@
 &emsp;&emsp;嘿嘿嘿饱饱(*╯3╰) :heart_eyes: 
-<br>&emsp;&emsp;你好饱饱~ :heart_eyes: <hr>
+<br>&emsp;&emsp;你好饱饱~ :heart_eyes:<br>
+&emsp;&emsp;![visitors](https://visitor-badge.laobi.icu/badge?page_id=page.id)<hr>
 
 饱饱如果想的话可以在vscode里安装<&emsp;**auto rename tag/html css support/live server**&emsp;>三个插件<br>
 作用分别是：<&emsp;**自动更新标签/在vscode中支持HTML和css语言/在页面中实时更新**&emsp;><br>（需要“设置——auto save中选择afterdelay”，同时在搜素栏搜“files.autoSaveDelay”更改自动更新时间）
